@@ -90,8 +90,8 @@ docker run --rm --network host -u "$(id -u):$(id -g)" -v "$(pwd):/app" -w /app c
 
 When contributing code, please follow these rules:
 
-1. **PHP 7.4+ Compatibility**:
-   - The library supports PHP `7.4` through `8.4+`. Avoid syntax that requires PHP 8.0+ only (such as constructor property promotion, named arguments, `readonly` properties, or `match` expressions) in `src/`.
+1. **PHP 7.4 – 8.5+ Compatibility**:
+   - The library supports PHP `7.4` through `8.5+` (tested on PHP `8.5.11`). Avoid syntax that requires PHP 8.0+ only (such as constructor property promotion, named arguments, `readonly` properties, or `match` expressions) in `src/`.
    - Include `declare(strict_types=1);` at the top of every PHP file.
 2. **PSR-4 & PSR-12**:
    - Follow [PSR-4](https://www.php-fig.org/psr/psr-4/) autoloading under the `Rayo\SmsSdk\` namespace (`src/`) and `Rayo\SmsSdk\Tests\` (`tests/`).

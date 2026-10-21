@@ -4,7 +4,7 @@ Official PHP SDK for the Rayo SMS Gateway API. Easily integrate Web-to-SMS funct
 
 ## Requirements
 
-- PHP 7.4 or higher (`8.0+` recommended)
+- PHP 7.4 – 8.5+ (`8.5` / `8.4` recommended)
 - `ext-json`
 - [Composer](https://getcomposer.org/)
 
