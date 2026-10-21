@@ -1,18 +1,41 @@
 {
-  "name": "rayo/rayo-sms-sdk",
-  "description": "Official PHP SDK for Rayo SMS Gateway",
+  "name": "rayo-sms/rayo-sms-php-sdk",
+  "description": "Official PHP SDK for the Rayo SMS Gateway API",
   "type": "library",
+  "keywords": [
+    "sms",
+    "rayo",
+    "gateway",
+    "api",
+    "sdk",
+    "messaging"
+  ],
+  "homepage": "https://github.com/Rayo-SMS/rayo-sms-php-sdk",
   "license": "MIT",
   "autoload": {
     "psr-4": {
       "Rayo\\SmsSdk\\": "src/"
     }
   },
+  "autoload-dev": {
+    "psr-4": {
+      "Rayo\\SmsSdk\\Tests\\": "tests/"
+    }
+  },
   "require": {
     "php": ">=7.4",
+    "ext-json": "*",
     "guzzlehttp/guzzle": "^7.0"
   },
   "require-dev": {
-    "phpunit/phpunit": "^9.0"
-  }
+    "phpunit/phpunit": "^9.6 || ^10.5 || ^11.0 || ^12.0"
+  },
+  "scripts": {
+    "test": "phpunit"
+  },
+  "config": {
+    "sort-packages": true
+  },
+  "minimum-stability": "stable",
+  "prefer-stable": true
 }
