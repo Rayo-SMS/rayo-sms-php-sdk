@@ -11,7 +11,7 @@
 
 ## Checklist
 
-- [ ] Code is compatible with PHP `>= 7.4` and uses `declare(strict_types=1);`
+- [ ] Code is compatible with supported PHP versions (`~8.2.35 || ~8.3.36 || ~8.4.27 || ~8.5.12`) and uses `declare(strict_types=1);`
 - [ ] Unit tests have been added or updated in `tests/`
 - [ ] `composer validate --strict` and `composer test` pass locally
 - [ ] Documentation (`README.md`) has been updated if public APIs changed
